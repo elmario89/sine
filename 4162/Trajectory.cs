@@ -60,7 +60,7 @@ namespace _4162
 
                 x = _x0 - (((_floatPPeriod * floatPScaleX) * angle) / (2 * (float)Math.PI));
                 y = _y0 - (_floatPAmplitude * floatPScaleY) * (float)Math.Sin(angle);
-                g.DrawLine(pen, x, y, x + 1, y + 1);
+                g.DrawLine(pen, x, y, x + 0.1f, y + 0.1f); ;
             }
 
             // draw horizontal line
