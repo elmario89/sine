@@ -76,7 +76,7 @@
             this.tbarFTrajectorySizeX.Location = new System.Drawing.Point(3, 41);
             this.tbarFTrajectorySizeX.Name = "tbarFTrajectorySizeX";
             this.tbarFTrajectorySizeX.Size = new System.Drawing.Size(264, 56);
-            this.tbarFTrajectorySizeX.TabIndex = 0;
+            this.tbarFTrajectorySizeX.TabIndex = 1;
             this.tbarFTrajectorySizeX.Value = 5;
             this.tbarFTrajectorySizeX.ValueChanged += new System.EventHandler(this.tbarFTrajectorySize_ValueChanged);
             // 
@@ -85,7 +85,7 @@
             this.tbarFTrajectorySizeY.Location = new System.Drawing.Point(3, 41);
             this.tbarFTrajectorySizeY.Name = "tbarFTrajectorySizeY";
             this.tbarFTrajectorySizeY.Size = new System.Drawing.Size(264, 56);
-            this.tbarFTrajectorySizeY.TabIndex = 2;
+            this.tbarFTrajectorySizeY.TabIndex = 1;
             this.tbarFTrajectorySizeY.Value = 5;
             this.tbarFTrajectorySizeY.ValueChanged += new System.EventHandler(this.tbarFTrajectorySizeY_ValueChanged);
             // 
