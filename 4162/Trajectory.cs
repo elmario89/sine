@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -60,15 +61,20 @@ namespace _4162
             // sine drawn from right to left
             _floatPx0 = _intPPboxWidth / 2 + _intPPboxWidth / 2 * floatPScaleX;
 
+            List<PointF> points = new List<PointF>();
+
             for (float angle = 0; angle <= frequency * Math.PI; angle += 0.001f)
             {
                 x = _floatPx0 - (((_floatPPeriod * floatPScaleX) * angle) / (frequency * (float)Math.PI));
                 y = _floatPy0 - (_floatPAmplitude * floatPScaleY) * (float)Math.Sin(angle);
-                g.DrawLine(pen, x, y, x + 0.1f, y + 0.1f); ;
+                g.DrawLine(pen, x, y, x + 0.1f, y + 0.1f);
+                points.Add(new PointF(x, y));
             }
 
             // draw horizontal line
             g.DrawLine(pen, _floatPx0, _floatPy0, x, y);
+
+            //points.ForEach(p => g.DrawEllipse(new Pen(Brushes.Red, 0.0f), p.X, p.Y, 5, 5));
         }
     }
 }

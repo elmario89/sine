@@ -36,7 +36,7 @@ namespace _4162
         }
 
         private void trackBar1_ValueChanged(object sender, EventArgs e)
-        {
+        { 
             _trajectory.frequency = tbarFFrequency.Value;
             pboxFWorkSpace.Invalidate();
         }
