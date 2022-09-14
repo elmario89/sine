@@ -11,24 +11,10 @@ namespace _4162
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.FillEllipse(Brushes.Red, pboxFWorkSpace.ClientRectangle);
-        }
-
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-        }
-
         private void pboxFWorkSpace_Paint(object sender, PaintEventArgs e)
         {
             TTrajectory trajectory = new TTrajectory(pboxFWorkSpace, e.Graphics, 1f, 1f);
             trajectory.Draw();
-        }
-
-        private void pnlFControlSpace_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

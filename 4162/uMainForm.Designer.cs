@@ -55,7 +55,6 @@
             this.pnlFControlSpace.Name = "pnlFControlSpace";
             this.pnlFControlSpace.Size = new System.Drawing.Size(270, 100);
             this.pnlFControlSpace.TabIndex = 1;
-            this.pnlFControlSpace.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlFControlSpace_Paint);
             // 
             // lblFTrjectorySize
             // 
