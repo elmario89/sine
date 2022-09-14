@@ -9,7 +9,6 @@ namespace _4162
         public frmMain()
         {
             InitializeComponent();
-            _trajectory = new Trajectory(pboxFWorkSpace);
         }
 
         private void pboxFWorkSpace_Paint(object sender, PaintEventArgs e)
@@ -29,7 +28,6 @@ namespace _4162
             _trajectory.floatPScaleY = tbarFTrajectorySizeY.Value * 0.02f;
             pboxFWorkSpace.Invalidate();
         }
-
         private void tbarFTrajectorySizeXY_ValueChanged(object sender, EventArgs e)
         {
             _trajectory.floatPScaleX = tbarFTrajectorySizeXY.Value * 0.02f;
@@ -43,9 +41,18 @@ namespace _4162
             pboxFWorkSpace.Invalidate();
         }
 
-        private void tbarFFrequency_Scroll(object sender, EventArgs e)
+        private void frmMain_Resize(object sender, EventArgs e)
         {
+            pboxFWorkSpace.Width = (this.Width / 100) * (100 - 27);
+            pboxFWorkSpace.Height = this.Height;
+            if (_trajectory == null) return;
+            _trajectory = new Trajectory(pboxFWorkSpace);
+            pboxFWorkSpace.Invalidate();
+        }
 
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            _trajectory = new Trajectory(pboxFWorkSpace);
         }
     }
 }

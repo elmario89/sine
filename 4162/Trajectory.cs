@@ -1,13 +1,12 @@
-﻿using _4162.interfaces;
-using System;
+﻿using System;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace _4162
 {
     internal class Trajectory
     {
-
         // scale for both x and y
         public float floatPScaleX = 0.5f;
         public float floatPScaleY = 0.5f;

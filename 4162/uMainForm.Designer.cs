@@ -39,8 +39,8 @@
             this.tbarFTrajectorySizeXY = new System.Windows.Forms.TrackBar();
             this.lblFTrajectorySizeMerged = new System.Windows.Forms.Label();
             this.pnlFControlSpace4 = new System.Windows.Forms.Panel();
-            this.lblFFrequency = new System.Windows.Forms.Label();
             this.tbarFFrequency = new System.Windows.Forms.TrackBar();
+            this.lblFFrequency = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pboxFWorkSpace)).BeginInit();
             this.pnlFControlSpace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbarFTrajectorySizeX)).BeginInit();
@@ -74,6 +74,7 @@
             // lblFTrajectorySizeX
             // 
             this.lblFTrajectorySizeX.AutoSize = true;
+            this.lblFTrajectorySizeX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFTrajectorySizeX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblFTrajectorySizeX.Location = new System.Drawing.Point(3, 9);
             this.lblFTrajectorySizeX.Name = "lblFTrajectorySizeX";
@@ -158,16 +159,6 @@
             this.pnlFControlSpace4.Size = new System.Drawing.Size(268, 100);
             this.pnlFControlSpace4.TabIndex = 5;
             // 
-            // lblFFrequency
-            // 
-            this.lblFFrequency.AutoSize = true;
-            this.lblFFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F);
-            this.lblFFrequency.Location = new System.Drawing.Point(1, 9);
-            this.lblFFrequency.Name = "lblFFrequency";
-            this.lblFFrequency.Size = new System.Drawing.Size(81, 20);
-            this.lblFFrequency.TabIndex = 0;
-            this.lblFFrequency.Text = "Частота";
-            // 
             // tbarFFrequency
             // 
             this.tbarFFrequency.Location = new System.Drawing.Point(5, 41);
@@ -177,8 +168,17 @@
             this.tbarFFrequency.Size = new System.Drawing.Size(260, 56);
             this.tbarFFrequency.TabIndex = 1;
             this.tbarFFrequency.Value = 2;
-            this.tbarFFrequency.Scroll += new System.EventHandler(this.tbarFFrequency_Scroll);
             this.tbarFFrequency.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            // 
+            // lblFFrequency
+            // 
+            this.lblFFrequency.AutoSize = true;
+            this.lblFFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F);
+            this.lblFFrequency.Location = new System.Drawing.Point(1, 9);
+            this.lblFFrequency.Name = "lblFFrequency";
+            this.lblFFrequency.Size = new System.Drawing.Size(81, 20);
+            this.lblFFrequency.TabIndex = 0;
+            this.lblFFrequency.Text = "Частота";
             // 
             // frmMain
             // 
@@ -193,6 +193,8 @@
             this.Controls.Add(this.pboxFWorkSpace);
             this.Name = "frmMain";
             this.Text = "Мое первое приложение";
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Resize += new System.EventHandler(this.frmMain_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pboxFWorkSpace)).EndInit();
             this.pnlFControlSpace.ResumeLayout(false);
             this.pnlFControlSpace.PerformLayout();
