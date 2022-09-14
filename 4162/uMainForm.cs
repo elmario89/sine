@@ -30,9 +30,11 @@ namespace _4162
             pboxFWorkSpace.Invalidate();
         }
 
-        private void tbarFTrajectorySizeY_Scroll(object sender, EventArgs e)
+        private void tbarFTrajectorySizeXY_ValueChanged(object sender, EventArgs e)
         {
-
+            _trajectory.floatPScaleX = tbarFTrajectorySizeXY.Value * 0.02f;
+            _trajectory.floatPScaleY = tbarFTrajectorySizeXY.Value * 0.02f;
+            pboxFWorkSpace.Invalidate();
         }
     }
 }
