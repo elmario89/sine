@@ -1,17 +1,22 @@
-﻿using System;
+﻿using _4162.interfaces;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace _4162
 {
-    internal class TTrajectory
+    internal class Trajectory
     {
-        // pbox itself
-        private PictureBox _pboxPPictureBox;
 
         // scale for both x and y
         public float floatPScaleX = 0.5f;
         public float floatPScaleY = 0.5f;
+
+        // frequency of sine
+        public int frequency = 2;
+        
+        // pbox itself
+        private readonly PictureBox _pboxPPictureBox;
 
         // properties of trajectory
         private float _floatPPeriod;
@@ -21,9 +26,10 @@ namespace _4162
         private int _intPPboxWidth;
         private int _intPPboxHeight;
 
-        public TTrajectory(PictureBox pboxPPictureBox)
+        public Trajectory(PictureBox pboxPPictureBox)
         {
             _pboxPPictureBox = pboxPPictureBox;
+
             _intPPboxWidth = _pboxPPictureBox.Width;
             _intPPboxHeight = _pboxPPictureBox.Height;
 
@@ -55,9 +61,9 @@ namespace _4162
             // sine drawn from right to left
             _floatPx0 = _intPPboxWidth / 2 + _intPPboxWidth / 2 * floatPScaleX;
 
-            for (float angle = 0; angle <= 2 * Math.PI; angle += 0.001f)
+            for (float angle = 0; angle <= frequency * Math.PI; angle += 0.001f)
             {
-                x = _floatPx0 - (((_floatPPeriod * floatPScaleX) * angle) / (2 * (float)Math.PI));
+                x = _floatPx0 - (((_floatPPeriod * floatPScaleX) * angle) / (frequency * (float)Math.PI));
                 y = _floatPy0 - (_floatPAmplitude * floatPScaleY) * (float)Math.Sin(angle);
                 g.DrawLine(pen, x, y, x + 0.1f, y + 0.1f); ;
             }

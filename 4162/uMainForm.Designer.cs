@@ -33,18 +33,23 @@
             this.lblFTrajectorySizeX = new System.Windows.Forms.Label();
             this.tbarFTrajectorySizeX = new System.Windows.Forms.TrackBar();
             this.tbarFTrajectorySizeY = new System.Windows.Forms.TrackBar();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlFControlSpace2 = new System.Windows.Forms.Panel();
             this.lblFTrajectorySizeY = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblFTrajectorySizeMerged = new System.Windows.Forms.Label();
+            this.pnlFControlSpace3 = new System.Windows.Forms.Panel();
             this.tbarFTrajectorySizeXY = new System.Windows.Forms.TrackBar();
+            this.lblFTrajectorySizeMerged = new System.Windows.Forms.Label();
+            this.pnlFControlSpace4 = new System.Windows.Forms.Panel();
+            this.lblFFrequency = new System.Windows.Forms.Label();
+            this.tbarFFrequency = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pboxFWorkSpace)).BeginInit();
             this.pnlFControlSpace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbarFTrajectorySizeX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbarFTrajectorySizeY)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlFControlSpace2.SuspendLayout();
+            this.pnlFControlSpace3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbarFTrajectorySizeXY)).BeginInit();
+            this.pnlFControlSpace4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarFFrequency)).BeginInit();
             this.SuspendLayout();
             // 
             // pboxFWorkSpace
@@ -96,14 +101,14 @@
             this.tbarFTrajectorySizeY.Value = 25;
             this.tbarFTrajectorySizeY.ValueChanged += new System.EventHandler(this.tbarFTrajectorySizeY_ValueChanged);
             // 
-            // panel1
+            // pnlFControlSpace2
             // 
-            this.panel1.Controls.Add(this.lblFTrajectorySizeY);
-            this.panel1.Controls.Add(this.tbarFTrajectorySizeY);
-            this.panel1.Location = new System.Drawing.Point(1026, 118);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 100);
-            this.panel1.TabIndex = 3;
+            this.pnlFControlSpace2.Controls.Add(this.lblFTrajectorySizeY);
+            this.pnlFControlSpace2.Controls.Add(this.tbarFTrajectorySizeY);
+            this.pnlFControlSpace2.Location = new System.Drawing.Point(1026, 118);
+            this.pnlFControlSpace2.Name = "pnlFControlSpace2";
+            this.pnlFControlSpace2.Size = new System.Drawing.Size(270, 100);
+            this.pnlFControlSpace2.TabIndex = 3;
             // 
             // lblFTrajectorySizeY
             // 
@@ -115,24 +120,14 @@
             this.lblFTrajectorySizeY.TabIndex = 3;
             this.lblFTrajectorySizeY.Text = "Размер тракектории Y";
             // 
-            // panel2
+            // pnlFControlSpace3
             // 
-            this.panel2.Controls.Add(this.tbarFTrajectorySizeXY);
-            this.panel2.Controls.Add(this.lblFTrajectorySizeMerged);
-            this.panel2.Location = new System.Drawing.Point(1026, 224);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(270, 100);
-            this.panel2.TabIndex = 4;
-            // 
-            // lblFTrajectorySizeMerged
-            // 
-            this.lblFTrajectorySizeMerged.AutoSize = true;
-            this.lblFTrajectorySizeMerged.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F);
-            this.lblFTrajectorySizeMerged.Location = new System.Drawing.Point(3, 9);
-            this.lblFTrajectorySizeMerged.Name = "lblFTrajectorySizeMerged";
-            this.lblFTrajectorySizeMerged.Size = new System.Drawing.Size(201, 20);
-            this.lblFTrajectorySizeMerged.TabIndex = 0;
-            this.lblFTrajectorySizeMerged.Text = "Размер траектории XY";
+            this.pnlFControlSpace3.Controls.Add(this.tbarFTrajectorySizeXY);
+            this.pnlFControlSpace3.Controls.Add(this.lblFTrajectorySizeMerged);
+            this.pnlFControlSpace3.Location = new System.Drawing.Point(1026, 224);
+            this.pnlFControlSpace3.Name = "pnlFControlSpace3";
+            this.pnlFControlSpace3.Size = new System.Drawing.Size(270, 100);
+            this.pnlFControlSpace3.TabIndex = 4;
             // 
             // tbarFTrajectorySizeXY
             // 
@@ -144,14 +139,56 @@
             this.tbarFTrajectorySizeXY.Value = 25;
             this.tbarFTrajectorySizeXY.ValueChanged += new System.EventHandler(this.tbarFTrajectorySizeXY_ValueChanged);
             // 
+            // lblFTrajectorySizeMerged
+            // 
+            this.lblFTrajectorySizeMerged.AutoSize = true;
+            this.lblFTrajectorySizeMerged.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F);
+            this.lblFTrajectorySizeMerged.Location = new System.Drawing.Point(3, 9);
+            this.lblFTrajectorySizeMerged.Name = "lblFTrajectorySizeMerged";
+            this.lblFTrajectorySizeMerged.Size = new System.Drawing.Size(201, 20);
+            this.lblFTrajectorySizeMerged.TabIndex = 0;
+            this.lblFTrajectorySizeMerged.Text = "Размер траектории XY";
+            // 
+            // pnlFControlSpace4
+            // 
+            this.pnlFControlSpace4.Controls.Add(this.tbarFFrequency);
+            this.pnlFControlSpace4.Controls.Add(this.lblFFrequency);
+            this.pnlFControlSpace4.Location = new System.Drawing.Point(1028, 330);
+            this.pnlFControlSpace4.Name = "pnlFControlSpace4";
+            this.pnlFControlSpace4.Size = new System.Drawing.Size(268, 100);
+            this.pnlFControlSpace4.TabIndex = 5;
+            // 
+            // lblFFrequency
+            // 
+            this.lblFFrequency.AutoSize = true;
+            this.lblFFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F);
+            this.lblFFrequency.Location = new System.Drawing.Point(1, 9);
+            this.lblFFrequency.Name = "lblFFrequency";
+            this.lblFFrequency.Size = new System.Drawing.Size(81, 20);
+            this.lblFFrequency.TabIndex = 0;
+            this.lblFFrequency.Text = "Частота";
+            // 
+            // tbarFFrequency
+            // 
+            this.tbarFFrequency.Location = new System.Drawing.Point(5, 41);
+            this.tbarFFrequency.Maximum = 50;
+            this.tbarFFrequency.Minimum = 1;
+            this.tbarFFrequency.Name = "tbarFFrequency";
+            this.tbarFFrequency.Size = new System.Drawing.Size(260, 56);
+            this.tbarFFrequency.TabIndex = 1;
+            this.tbarFFrequency.Value = 2;
+            this.tbarFFrequency.Scroll += new System.EventHandler(this.tbarFFrequency_Scroll);
+            this.tbarFFrequency.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1308, 661);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlFControlSpace4);
+            this.Controls.Add(this.pnlFControlSpace3);
+            this.Controls.Add(this.pnlFControlSpace2);
             this.Controls.Add(this.pnlFControlSpace);
             this.Controls.Add(this.pboxFWorkSpace);
             this.Name = "frmMain";
@@ -161,11 +198,14 @@
             this.pnlFControlSpace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbarFTrajectorySizeX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbarFTrajectorySizeY)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlFControlSpace2.ResumeLayout(false);
+            this.pnlFControlSpace2.PerformLayout();
+            this.pnlFControlSpace3.ResumeLayout(false);
+            this.pnlFControlSpace3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbarFTrajectorySizeXY)).EndInit();
+            this.pnlFControlSpace4.ResumeLayout(false);
+            this.pnlFControlSpace4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarFFrequency)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,11 +217,14 @@
         private System.Windows.Forms.TrackBar tbarFTrajectorySizeX;
         private System.Windows.Forms.Label lblFTrajectorySizeX;
         private System.Windows.Forms.TrackBar tbarFTrajectorySizeY;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlFControlSpace2;
         private System.Windows.Forms.Label lblFTrajectorySizeY;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlFControlSpace3;
         private System.Windows.Forms.Label lblFTrajectorySizeMerged;
         private System.Windows.Forms.TrackBar tbarFTrajectorySizeXY;
+        private System.Windows.Forms.Panel pnlFControlSpace4;
+        private System.Windows.Forms.Label lblFFrequency;
+        private System.Windows.Forms.TrackBar tbarFFrequency;
     }
 }
 
