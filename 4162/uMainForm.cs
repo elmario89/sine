@@ -22,10 +22,8 @@ namespace _4162
 
         private void pboxFWorkSpace_Paint(object sender, PaintEventArgs e)
         {
-            TTrajectory trajectory = new TTrajectory();
-            trajectory.floatPScaleX = 1f;
-            trajectory.floatPAmplitude = 1f;
-            trajectory.Draw(pboxFWorkSpace, e);
+            TTrajectory trajectory = new TTrajectory(pboxFWorkSpace, e.Graphics, 1f, 1f);
+            trajectory.Draw();
         }
 
         private void pnlFControlSpace_Paint(object sender, PaintEventArgs e)
