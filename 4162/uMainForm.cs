@@ -20,14 +20,19 @@ namespace _4162
 
         private void tbarFTrajectorySize_ValueChanged(object sender, EventArgs e)
         {
-            _trajectory.floatPScaleX = tbarFTrajectorySizeX.Value * 0.1f;
+            _trajectory.floatPScaleX = tbarFTrajectorySizeX.Value * 0.02f;
             pboxFWorkSpace.Invalidate();
         }
 
         private void tbarFTrajectorySizeY_ValueChanged(object sender, EventArgs e)
         {
-            _trajectory.floatPScaleY = tbarFTrajectorySizeY.Value * 0.1f;
+            _trajectory.floatPScaleY = tbarFTrajectorySizeY.Value * 0.02f;
             pboxFWorkSpace.Invalidate();
+        }
+
+        private void tbarFTrajectorySizeY_Scroll(object sender, EventArgs e)
+        {
+
         }
     }
 }

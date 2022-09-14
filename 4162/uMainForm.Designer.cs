@@ -74,19 +74,22 @@
             // tbarFTrajectorySizeX
             // 
             this.tbarFTrajectorySizeX.Location = new System.Drawing.Point(3, 41);
+            this.tbarFTrajectorySizeX.Maximum = 50;
             this.tbarFTrajectorySizeX.Name = "tbarFTrajectorySizeX";
             this.tbarFTrajectorySizeX.Size = new System.Drawing.Size(264, 56);
             this.tbarFTrajectorySizeX.TabIndex = 1;
-            this.tbarFTrajectorySizeX.Value = 5;
+            this.tbarFTrajectorySizeX.Value = 25;
             this.tbarFTrajectorySizeX.ValueChanged += new System.EventHandler(this.tbarFTrajectorySize_ValueChanged);
             // 
             // tbarFTrajectorySizeY
             // 
             this.tbarFTrajectorySizeY.Location = new System.Drawing.Point(3, 41);
+            this.tbarFTrajectorySizeY.Maximum = 50;
             this.tbarFTrajectorySizeY.Name = "tbarFTrajectorySizeY";
             this.tbarFTrajectorySizeY.Size = new System.Drawing.Size(264, 56);
             this.tbarFTrajectorySizeY.TabIndex = 1;
-            this.tbarFTrajectorySizeY.Value = 5;
+            this.tbarFTrajectorySizeY.Value = 25;
+            this.tbarFTrajectorySizeY.Scroll += new System.EventHandler(this.tbarFTrajectorySizeY_Scroll);
             this.tbarFTrajectorySizeY.ValueChanged += new System.EventHandler(this.tbarFTrajectorySizeY_ValueChanged);
             // 
             // panel1
