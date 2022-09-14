@@ -9,7 +9,7 @@ namespace _4162
         // pbox itself
         private PictureBox _pboxPPictureBox;
 
-        // scale by x and y, default is 0.5
+
         public float floatPScaleX = 0.5f;
         public float floatPScaleY = 0.5f;
 
@@ -55,7 +55,7 @@ namespace _4162
             // sine drawn from right to left
             _x0 = _width / 2 + _width / 2 * floatPScaleX;
 
-            for (float angle = 0; angle <= 2 * Math.PI; angle += 0.00001f)
+            for (float angle = 0; angle <= 2 * Math.PI; angle += 0.001f)
             {
 
                 x = _x0 - (((_floatPPeriod * floatPScaleX) * angle) / (2 * (float)Math.PI));
