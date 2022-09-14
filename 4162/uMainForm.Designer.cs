@@ -116,9 +116,9 @@
             this.lblFTrajectorySizeY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F);
             this.lblFTrajectorySizeY.Location = new System.Drawing.Point(3, 9);
             this.lblFTrajectorySizeY.Name = "lblFTrajectorySizeY";
-            this.lblFTrajectorySizeY.Size = new System.Drawing.Size(199, 20);
+            this.lblFTrajectorySizeY.Size = new System.Drawing.Size(103, 20);
             this.lblFTrajectorySizeY.TabIndex = 3;
-            this.lblFTrajectorySizeY.Text = "Размер тракектории Y";
+            this.lblFTrajectorySizeY.Text = "Амплитуда";
             // 
             // pnlFControlSpace3
             // 
@@ -145,9 +145,9 @@
             this.lblFTrajectorySizeMerged.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.11F);
             this.lblFTrajectorySizeMerged.Location = new System.Drawing.Point(3, 9);
             this.lblFTrajectorySizeMerged.Name = "lblFTrajectorySizeMerged";
-            this.lblFTrajectorySizeMerged.Size = new System.Drawing.Size(201, 20);
+            this.lblFTrajectorySizeMerged.Size = new System.Drawing.Size(199, 20);
             this.lblFTrajectorySizeMerged.TabIndex = 0;
-            this.lblFTrajectorySizeMerged.Text = "Размер траектории XY";
+            this.lblFTrajectorySizeMerged.Text = "Размер X и амплитуда";
             // 
             // pnlFControlSpace4
             // 
