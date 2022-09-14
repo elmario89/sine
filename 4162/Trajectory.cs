@@ -9,7 +9,7 @@ namespace _4162
         // pbox itself
         private PictureBox _pboxPPictureBox;
 
-
+        // scale for both x and y
         public float floatPScaleX = 0.5f;
         public float floatPScaleY = 0.5f;
 
