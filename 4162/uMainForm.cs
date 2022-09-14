@@ -43,8 +43,8 @@ namespace _4162
 
         private void frmMain_Resize(object sender, EventArgs e)
         {
-            pboxFWorkSpace.Width = (this.Width / 100) * (100 - 27);
-            pboxFWorkSpace.Height = this.Height;
+            pboxFWorkSpace.Width = getWidth();
+            pboxFWorkSpace.Height = this.ClientSize.Height;
             if (_trajectory == null) return;
             _trajectory = new Trajectory(pboxFWorkSpace);
             pboxFWorkSpace.Invalidate();
@@ -52,7 +52,14 @@ namespace _4162
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            pboxFWorkSpace.Width = getWidth();
+            pboxFWorkSpace.Height = this.ClientSize.Height;
             _trajectory = new Trajectory(pboxFWorkSpace);
+        }
+
+        private int getWidth()
+        {
+            return this.Width / 100 * (100 - pnlFControlSpace.ClientSize.Width / (this.Width / 100));
         }
     }
 }

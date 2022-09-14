@@ -48,7 +48,7 @@ namespace _4162
             Pen pen = new Pen(Brushes.Black, 0.01F);
 
             // draw back lines from 0 to 10
-            for (float f = 0; f <= _intPPboxWidth; f += (_intPPboxWidth / 10))
+            for (float f = 0; f < _intPPboxWidth; f += (_intPPboxWidth / 10))
             {
                 g.DrawLine(new Pen(Brushes.Silver, 0.01F), f, _intPPboxHeight, f, 0);
             }

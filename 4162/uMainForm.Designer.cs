@@ -55,18 +55,19 @@
             // pboxFWorkSpace
             // 
             this.pboxFWorkSpace.BackColor = System.Drawing.Color.Gainsboro;
-            this.pboxFWorkSpace.Location = new System.Drawing.Point(12, 12);
+            this.pboxFWorkSpace.Location = new System.Drawing.Point(0, -2);
             this.pboxFWorkSpace.Name = "pboxFWorkSpace";
-            this.pboxFWorkSpace.Size = new System.Drawing.Size(1000, 640);
+            this.pboxFWorkSpace.Size = new System.Drawing.Size(1003, 662);
             this.pboxFWorkSpace.TabIndex = 0;
             this.pboxFWorkSpace.TabStop = false;
             this.pboxFWorkSpace.Paint += new System.Windows.Forms.PaintEventHandler(this.pboxFWorkSpace_Paint);
             // 
             // pnlFControlSpace
             // 
+            this.pnlFControlSpace.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFControlSpace.Controls.Add(this.lblFTrajectorySizeX);
             this.pnlFControlSpace.Controls.Add(this.tbarFTrajectorySizeX);
-            this.pnlFControlSpace.Location = new System.Drawing.Point(1026, 12);
+            this.pnlFControlSpace.Location = new System.Drawing.Point(1042, -2);
             this.pnlFControlSpace.Name = "pnlFControlSpace";
             this.pnlFControlSpace.Size = new System.Drawing.Size(270, 100);
             this.pnlFControlSpace.TabIndex = 1;
@@ -104,9 +105,10 @@
             // 
             // pnlFControlSpace2
             // 
+            this.pnlFControlSpace2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFControlSpace2.Controls.Add(this.lblFTrajectorySizeY);
             this.pnlFControlSpace2.Controls.Add(this.tbarFTrajectorySizeY);
-            this.pnlFControlSpace2.Location = new System.Drawing.Point(1026, 118);
+            this.pnlFControlSpace2.Location = new System.Drawing.Point(1042, 101);
             this.pnlFControlSpace2.Name = "pnlFControlSpace2";
             this.pnlFControlSpace2.Size = new System.Drawing.Size(270, 100);
             this.pnlFControlSpace2.TabIndex = 3;
@@ -123,9 +125,10 @@
             // 
             // pnlFControlSpace3
             // 
+            this.pnlFControlSpace3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFControlSpace3.Controls.Add(this.tbarFTrajectorySizeXY);
             this.pnlFControlSpace3.Controls.Add(this.lblFTrajectorySizeMerged);
-            this.pnlFControlSpace3.Location = new System.Drawing.Point(1026, 224);
+            this.pnlFControlSpace3.Location = new System.Drawing.Point(1042, 204);
             this.pnlFControlSpace3.Name = "pnlFControlSpace3";
             this.pnlFControlSpace3.Size = new System.Drawing.Size(270, 100);
             this.pnlFControlSpace3.TabIndex = 4;
@@ -152,9 +155,10 @@
             // 
             // pnlFControlSpace4
             // 
+            this.pnlFControlSpace4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFControlSpace4.Controls.Add(this.tbarFFrequency);
             this.pnlFControlSpace4.Controls.Add(this.lblFFrequency);
-            this.pnlFControlSpace4.Location = new System.Drawing.Point(1028, 330);
+            this.pnlFControlSpace4.Location = new System.Drawing.Point(1042, 310);
             this.pnlFControlSpace4.Name = "pnlFControlSpace4";
             this.pnlFControlSpace4.Size = new System.Drawing.Size(268, 100);
             this.pnlFControlSpace4.TabIndex = 5;
